@@ -1,0 +1,90 @@
+1)Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ mkdir data
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ ls
+Graphs.java  csv2text.py  data  essays.txt  src
+
+2)Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ mkdir test
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ ls
+Graphs.java  csv2text.py  data  essays.txt  src  test
+
+3)Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ cd src
+
+4)Sadiya@SADIYA ~/Desktop/test_sadiya/src (master)
+$ mkdir -p java/utils
+
+Sadiya@SADIYA ~/Desktop/test_sadiya/src (master)
+$ mkdir -p python/utils
+
+Sadiya@SADIYA ~/Desktop/test_sadiya/src (master)
+$ cd ..
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ ls
+Graphs.java  csv2text.py  data  essays.txt  src  test
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ cd data
+
+Sadiya@SADIYA ~/Desktop/test_sadiya/data (master)
+$ mkdir essays
+
+Sadiya@SADIYA ~/Desktop/test_sadiya/data (master)
+$ mkdir tweets
+
+Sadiya@SADIYA ~/Desktop/test_sadiya/data (master)
+$ ls
+essays  tweets
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ mv Graphs.java  src/java/utils/
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ ls src/java/utils/
+Graphs.java
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ mv essays.txt data/essays/essays.csv
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ ls data/essays/
+essays.csv
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ cp data/essays/essays.csv test
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ ls test
+essays.csv
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ mv csv2text.py src/python/utils/
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ git add test
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ git commit -m "this is the test folder"
+[master cf07851] this is the test folder
+ 1 file changed, 2469 insertions(+)
+ create mode 100644 test/essays.csv
+
+Sadiya@SADIYA ~/Desktop/test_sadiya (master)
+$ git push -u origin master
+Username for 'https://github.com': sadiya94
+Password for 'https://sadiya94@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 293 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/Sadiya94/test_sadiya.git
+   fc30207..cf07851  master -> master
+Branch master set up to track remote branch master from origin.
+
+
+
