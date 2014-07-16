@@ -1,4 +1,3 @@
-# this file print the whole text without any punctuation
 import string
 filename = "essays.txt"
 file_object = open(filename, 'r')

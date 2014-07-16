@@ -2,9 +2,21 @@
 
 That is, the first line should be saved as essay1.txt, the second line as essay2.txt, etc.
 '''
-hello = 'hi'
-print hello
 
+
+filename = r'/Users/sadiyasultana/Desktop/research_files/test_sadiya/test/essays.csv'
+f = open(filename)
+
+a =1
+line = f.readline()
+while line:
+    txtfile = open ("essay"+str(a)+".csv", 'w') # saved each line as a file 
+    a += 1 # changing the file number
+    txtfile.write(line) # writing the line into the new file
+    line = f.readline() # moving into the new line
+    txtfile.close()
+
+f.close()
 
 
  

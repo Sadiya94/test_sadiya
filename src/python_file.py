@@ -1,1 +1,9 @@
-#this file is to give the line num as a outputfilename = "essays.txt"file_object = open(filename, 'r')x = file_object.readline()count =0for line in file_object:    count+=1print count
+filename = "essays.txt"
+file_object = open(filename, 'r')
+count = 0
+x = file_object.readline()
+while x:
+	count = count + 1
+	x = file_object.readline()
+
+print count
